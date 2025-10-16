@@ -4,31 +4,42 @@
   <meta charset="UTF-8">
   <title>Previdência Social Brasileira</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; color: #333; }
-    h1, h2 { color: #005a9c; }
-    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    th { background-color: #e0e0e0; }
-    .box { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-  </style>
-</head>
-<body>
-  <div class="box">
-    <h1>Entendendo a Previdência Social no Brasil</h1>
-
-    <h2>O que é a Previdência Social?</h2>
-    <p>É um sistema que protege os trabalhadores quando não podem mais trabalhar. Garante benefícios como:</p>
-    <ul>
-      <li>Aposentadoria</li>
-      <li>Auxílio-doença</li>
-      <li>Salário-maternidade</li>
-      <li>Pensão por morte</li>
-    </ul>
-
-    <h2>Quem participa?</h2>
-    <p>Todos que trabalham com carteira assinada, autônomos e MEIs. Empresas também contribuem.</p>
-
-    <h2>Tipos de Regimes</h2>
-    <table>
-      <tr><th>Regime</th><th>Quem participa</th><th>Exemplo</th></tr>
-      <tr>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      overflow: hidden;
+    }
+    .slide {
+      display: none;
+      padding: 60px;
+      height: 100vh;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      color: #333;
+    }
+    .slide.active {
+      display: block;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+    h1, h2 {
+      color: #005a9c;
+    }
+    ul, table {
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #e0e0e0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translate
